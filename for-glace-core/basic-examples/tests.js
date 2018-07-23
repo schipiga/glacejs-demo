@@ -10,8 +10,9 @@ test("failed test", () => {
     });
 });
 
-test("skipped test", { skip: "Due to bug https://my.bugtracker.org/126"}, () => {
-    chunk(() => {});
+test("skipped test",
+    { skip: "Due to bug https://my.bugtracker.org/126" }, () => {
+        chunk(() => {});
 });
 
 test("with failed chunk", () => {

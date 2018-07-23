@@ -15,9 +15,9 @@ app.checkLanguage = lang => {
 };
 
 test("Change application language",
-    null /* options */, [fx.launchedApp], ctx => {
+    null /* options */, [fx.launchedApp], () => {
 
-        forEachLanguage(ctx, lang => {
+        forEachLanguage(lang => {
             chunk("in settings", () => {
                 app.openSettings();
                 app.setLanguage(lang);
