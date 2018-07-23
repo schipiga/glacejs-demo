@@ -1,0 +1,29 @@
+{
+  "name": "glacejs-demo",
+  "version": "1.0.0",
+  "description": "GlaceJS demo for Tallinn DevClub",
+  "main": "index.js",
+  "scripts": {
+    "basic-examples": "./node_modules/glace-core/bin/glace for-glace-core/test_basic_examples.js --allure",
+    "retry-passed": "./node_modules/glace-core/bin/glace for-glace-core/retry-examples/testsPassed.js --languages \"et, ru, en\"",
+    "retry-failed": "./node_modules/glace-core/bin/glace for-glace-core/retry-examples/testsFailed.js --languages \"et, ru, en\"",
+    "retry-retry": "./node_modules/glace-core/bin/glace for-glace-core/retry-examples/testsRetry.js --languages \"et, ru, en\" --retry 1",
+    "kill-processes": "./node_modules/glace-core/bin/glace for-glace-core/retry-examples/testsPassed.js --languages \"et, ru, en\" --kill-procs \"firefox, sublime\" --stdout-log"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schipiga/glacejs-demo.git"
+  },
+  "author": "Sergei Chipiga <chipiga86@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schipiga/glacejs-demo/issues"
+  },
+  "homepage": "https://github.com/schipiga/glacejs-demo#readme",
+  "dependencies": {
+    "glace-core": "^1.7.1",
+    "glace-js": "^2.2.6",
+    "glace-proxy": "^1.3.4",
+    "glace-utils": "^1.2.8"
+  }
+}

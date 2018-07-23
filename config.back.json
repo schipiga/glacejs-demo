@@ -1,0 +1,5 @@
+{
+    "languages": "et, ru, en",
+    "kill-procs": "firefox, sublime",
+    "stdout-log": true
+}
